@@ -1,0 +1,26 @@
+export default [
+    {
+        id: 1,
+        default: true,
+        firstName: 'Хелена',
+        lastName: 'Гарсия',
+        email: 'stroyka@example.com',
+        phone: '38 972 588-42-36',
+        country: 'Ресей Фидирациясы',
+        city: 'Мәскеу',
+        postcode: '115302',
+        address: 'Варшавская көш., 15-2-178',
+    },
+    {
+        id: 2,
+        default: false,
+        firstName: 'Жандаулет',
+        lastName: 'Аслан',
+        email: 'stroyka@example.com',
+        phone: 'ZX 971 972-57-26',
+        country: 'RandomLand',
+        city: 'Астана',
+        postcode: '4b4f53',
+        address: 'Кабанбай батыра 11',
+    },
+];
