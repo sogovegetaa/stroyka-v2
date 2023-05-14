@@ -23,7 +23,7 @@ function ProductTabSpecification() {
 
   return (
     <div className="spec">
-      <h3 className="spec__header">Specification</h3>
+      <h3 className="spec__header">Спецификация</h3>
       {sections}
       <div className="spec__disclaimer">
         Техникалық сипаттамалары, жеткізілім жиынтығы, өндірушінің елі және

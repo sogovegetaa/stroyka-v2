@@ -13,6 +13,7 @@ import Indicator from './Indicator';
 import NavLinks from './NavLinks';
 import IndicatorSearch from './IndicatorSearch';
 import { Heart20Svg, LogoSmallSvg } from '../../svg';
+import AccountButton from './AccountButton';
 
 
 function NavPanel(props) {
@@ -57,6 +58,7 @@ function NavPanel(props) {
                         <Indicator url="/shop/wishlist" value={wishlist.length} icon={<Heart20Svg />} />
 
                         <CartIndicator />
+                        <AccountButton />
                     </div>
                 </div>
             </div>

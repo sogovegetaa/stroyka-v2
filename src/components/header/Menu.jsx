@@ -37,7 +37,7 @@ function Menu(props) {
 
         return link;
     };
-    console.log(items)
+     
     const itemsList = items.map((item, index) => {
         
         let arrow;

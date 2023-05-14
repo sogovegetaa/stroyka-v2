@@ -1,128 +1,186 @@
 // react
-import React from 'react';
+import React, { useRef } from "react";
 
 // third-party
-import { Helmet } from 'react-helmet';
-import { Link } from 'react-router-dom';
+import { Helmet } from "react-helmet";
 
 // application
-import PageHeader from '../shared/PageHeader';
-import { Check9x7Svg } from '../../svg';
+import PageHeader from "../shared/PageHeader";
 
 // data stubs
-import theme from '../../data/theme';
-
+import theme from "../../data/theme";
 
 export default function AccountPageLogin() {
-    const breadcrumb = [
-        { title: 'Басты бет', url: '' },
-        { title: 'My Account', url: '' },
-    ];
+  const breadcrumb = [
+    { title: "Басты бет", url: "" },
+    { title: "Менің аккаунтым", url: "" },
+  ];
+  const [errAcc, setErrAcc] = React.useState(false);
+  const [accCreated, setAccCreated] = React.useState(false)
+  const [accCreatedError, setAccCreatedError] = React.useState(false)
+  const onSubmit = (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const email = formData.get("email");
+    const full_name = formData.get("full_name");
+    const password = formData.get("password");
 
-    return (
-        <React.Fragment>
-            <Helmet>
-                <title>{`Login — ${theme.name}`}</title>
-            </Helmet>
+    var requestOptions = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        email,
+        full_name,
+        password,
+      }),
+      redirect: "follow",
+    };
+    fetch("https://asem-backend.vercel.app/api/user/regs", requestOptions)
+      .then((response) => response.text())
+      .then((result) => {
+        setAccCreated(true)
+        window.location.href = "/"
+        console.log(result)})
+      .catch((error) => {
+        setAccCreatedError(true)
+        console.log("error", error)});
+  };
 
-            <PageHeader header="My Account" breadcrumb={breadcrumb} />
+  const onLogin = (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const email = formData.get("email");
+    const password = formData.get("password");
 
-            <div className="block">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-6 d-flex">
-                            <div className="card flex-grow-1 mb-md-0">
-                                <div className="card-body">
-                                    <h3 className="card-title">Логин</h3>
-                                    <form>
-                                        <div className="form-group">
-                                            <label htmlFor="login-email">Электрондық пошта</label>
-                                            <input
-                                                id="login-email"
-                                                type="email"
-                                                className="form-control"
-                                                placeholder="Enter email"
-                                            />
-                                        </div>
-                                        <div className="form-group">
-                                            <label htmlFor="login-password">Құпия сөз</label>
-                                            <input
-                                                id="login-password"
-                                                type="password"
-                                                className="form-control"
-                                                placeholder="Password"
-                                            />
-                                            <small className="form-text text-muted">
-                                                <Link to="/">Ұмытылған құпия сөз</Link>
-                                            </small>
-                                        </div>
-                                        <div className="form-group">
-                                            <div className="form-check">
-                                                <span className="form-check-input input-check">
-                                                    <span className="input-check__body">
-                                                        <input
-                                                            id="login-remember"
-                                                            type="checkbox"
-                                                            className="input-check__input"
-                                                        />
-                                                        <span className="input-check__box" />
-                                                        <Check9x7Svg className="input-check__icon" />
-                                                    </span>
-                                                </span>
-                                                <label className="form-check-label" htmlFor="login-remember">
-                                                    Мені есіңе ал
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <button type="submit" className="btn btn-primary mt-2 mt-md-3 mt-lg-4">
-                                            Логин
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-md-6 d-flex mt-4 mt-md-0">
-                            <div className="card flex-grow-1 mb-0">
-                                <div className="card-body">
-                                    <h3 className="card-title">Тіркеу</h3>
-                                    <form>
-                                        <div className="form-group">
-                                            <label htmlFor="register-email">Электрондық пошта</label>
-                                            <input
-                                                id="register-email"
-                                                type="email"
-                                                className="form-control"
-                                                placeholder="Enter email"
-                                            />
-                                        </div>
-                                        <div className="form-group">
-                                            <label htmlFor="register-password">Құпия сөз</label>
-                                            <input
-                                                id="register-password"
-                                                type="password"
-                                                className="form-control"
-                                                placeholder="Password"
-                                            />
-                                        </div>
-                                        <div className="form-group">
-                                            <label htmlFor="register-confirm">Құпия сөзді қайталау</label>
-                                            <input
-                                                id="register-confirm"
-                                                type="password"
-                                                className="form-control"
-                                                placeholder="Password"
-                                            />
-                                        </div>
-                                        <button type="submit" className="btn btn-primary mt-2 mt-md-3 mt-lg-4">
-                                            Тіркеу
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+    var requestOptions = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        email,
+        password,
+      }),
+      redirect: "follow",
+    };
+    fetch("https://asem-backend.vercel.app/api/user/login", requestOptions)
+      .then((response) => {
+        return response.json()
+      }).then(res => {
+        if(!res.token){
+          setErrAcc(true)
+        }else {
+          localStorage.setItem("Bekas_token", res.token);
+          window.location.href = "/"
+        }
+        console.log(res);
+      })
+      .catch((error) => console.log("error", error));
+  };
+
+  return (
+    <React.Fragment>
+      <Helmet>
+        <title>{`Логин — ${theme.name}`}</title>
+      </Helmet>
+
+      <PageHeader header="Менің аккаунтым" breadcrumb={breadcrumb} />
+
+      <div className="block">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6 d-flex">
+              <div className="card flex-grow-1 mb-md-0">
+                <div className="card-body">
+                  <h3 className="card-title">Логин</h3>
+                  <form onSubmit={(e) => onLogin(e)}>
+                    <div className="form-group">
+                      <label htmlFor="login-email">Электрондық пошта</label>
+                      <input
+                        id="login-email"
+                        type="email"
+                        className="form-control"
+                        placeholder="Enter email"
+                        name="email"
+                      />
                     </div>
+                    <div className="form-group">
+                      <label htmlFor="login-password">Құпия сөз</label>
+                      <input
+                        id="login-password"
+                        type="password"
+                        className="form-control"
+                        placeholder="Password"
+                        name="password"
+                      />
+                      <small
+                        className="form-text"
+                        style={{ color: "red!important" }}
+                      >
+                        {errAcc && "Деректер дұрыс енгізілмеген"}
+                      </small>
+                    </div>
+
+                    <button
+                      type="submit"
+                      className="btn btn-primary mt-2 mt-md-3 mt-lg-4"
+                    >
+                      Логин
+                    </button>
+                  </form>
                 </div>
+              </div>
             </div>
-        </React.Fragment>
-    );
+            <div className="col-md-6 d-flex mt-4 mt-md-0">
+              <div className="card flex-grow-1 mb-0">
+                <div className="card-body">
+                  <h3 className="card-title">Тіркеу</h3>
+                  <form onSubmit={(e) => onSubmit(e)}>
+                    <div className="form-group">
+                      <label htmlFor="register-email">Электрондық пошта</label>
+                      <input
+                        id="register-email"
+                        type="email"
+                        name="email"
+                        className="form-control"
+                        placeholder="Email енгізіңіз"
+                      />
+                    </div>
+                    <div className="form-group">
+                      <label htmlFor="full-name">Аты - жөні</label>
+                      <input
+                        id="full_name"
+                        type="text"
+                        name="full-name"
+                        className="form-control"
+                        placeholder="Толық атын енгізіңіз"
+                      />
+                    </div>
+                    <div className="form-group">
+                      <label htmlFor="register-password">
+                        Құпия сөзді қайталау
+                      </label>
+                      <input
+                        id="register-password"
+                        type="password"
+                        name="password"
+                        className="form-control"
+                        placeholder="Құпия сөзді енгізіңіз"
+                      />
+                    </div>
+
+
+                    <button
+                      type="submit"
+                      className="btn btn-primary mt-2 mt-md-3 mt-lg-4"
+                    >
+                      Тіркеу
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </React.Fragment>
+  );
 }

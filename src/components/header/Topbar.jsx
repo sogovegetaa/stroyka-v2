@@ -36,7 +36,7 @@ function Topbar() {
     ));
 
     return (
-        <div className="site-header__topbar topbar">
+        <div className="site-header__topbar topbar" style={{display: 'none'}}>
             <div className="topbar__container container">
                 <div className="topbar__row">
                     {linksList}

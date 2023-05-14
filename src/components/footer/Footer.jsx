@@ -40,10 +40,10 @@ export default function Footer() {
                             <FooterContacts />
                         </div>
                         <div className="col-6 col-md-3 col-lg-2">
-                            <FooterLinks title="Information" items={informationLinks} />
+                            <FooterLinks title="Ақпарат" items={informationLinks} />
                         </div>
                         <div className="col-6 col-md-3 col-lg-2">
-                            <FooterLinks title="My Account" items={accountLinks} />
+                            <FooterLinks title="Менің аккаутім" items={accountLinks} />
                         </div>
                         <div className="col-12 col-md-12 col-lg-4">
                             <FooterNewsletter />
