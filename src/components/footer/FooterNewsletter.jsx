@@ -48,8 +48,7 @@ export default function FooterNewsletter() {
     <div className="site-footer__widget footer-newsletter">
       <h5 className="footer-newsletter__title">Бюллетень</h5>
       <div className="footer-newsletter__text">
-        Praesent pellentesque volutpat ex, vitae auctor lorem pulvinar mollis
-        felis at lacinia.
+        Сізге басқа сұрауларды жауап беру үшін менімді хабарласа аласыз.
       </div>
 
       <form action="" className="footer-newsletter__form">

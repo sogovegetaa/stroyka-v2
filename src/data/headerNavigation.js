@@ -153,7 +153,7 @@ export default [
                 { title: 'Шарттар мен Ережелер', url: '/site/terms' },
                 { title: 'FAQ', url: '/site/faq' },
                 // { title: 'Компоненттер', url: '/site/components' },
-                { title: 'Баспахана', url: '/site/typography' },
+                // { title: 'Баспахана', url: '/site/typography' },
             ],
         },
     },

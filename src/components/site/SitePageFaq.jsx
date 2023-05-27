@@ -23,7 +23,7 @@ function SitePageFaq() {
                 <title>{`FAQ — ${theme.name}`}</title>
             </Helmet>
 
-            <PageHeader header="Frequently Asked Questions" breadcrumb={breadcrumb} />
+            <PageHeader header="Жиі қойылатын сұрақтар" breadcrumb={breadcrumb} />
 
             <div className="block faq">
                 <div className="container">
@@ -38,25 +38,13 @@ function SitePageFaq() {
                                         <h6>Жеткізудің қандай әдістері бар?</h6>
 
                                         <p>
-                                            Lorem ipsum dolor sit amet conse ctetur adipisicing
-                                            elit, sed do eiusmod tempor incididunt ut labore et
-                                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                                            nostrud exercitation ullamco laboris nisi ut aliquip
-                                            ex ea commodo consequat. Duis aute irure dolor in
-                                            reprehenderit in voluptate velit esse cillum dolore
-                                            eu fugiat.
+                                        Жеткізу процесінде көптеген әдістер пайда болуы мүмкін. Оныларды таңдау, өзара кеңістіктерге байланысты айырмашылықтарды тексеру, жаңа технологияларды қолдану, мәселелерді шешу уақытын талдау және өтеуден қорғау, мәліметтерді жинау, жеткізу параметрлерін көзделу және төмендеу, тексеру және бағалау, жеткізуді бастау, көзделу және бағалау, жеткізуді бастау және бітіру, нәтижелерді анықтау және дәлелдеме жасау сияқты бірнеше әдістерге қатысты болуы мүмкін.
                                         </p>
 
                                         <h6>Сіз халықаралық тасымалдарды жүзеге асырасыз ба?</h6>
 
                                         <p>
-                                            Lorem ipsum dolor sit amet conse ctetur adipisicing
-                                            elit, sed do eiusmod tempor incididunt ut labore et
-                                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                                            nostrud exercitation ullamco laboris nisi ut aliquip
-                                            ex ea commodo consequat. Duis aute irure dolor in
-                                            reprehenderit in voluptate velit esse cillum dolore
-                                            eu fugiat.
+                                        Сіз халықаралық тасымалдарды жүзеге асырасыз. Біз тасымалдау компаниясы ретінде қызмет көрсетеміз, әлемдік деңгейде жеткізу, көлемді және мөлшерлі каргоны жеткізу жатамында. Бізге жеткізу кезінде сенімді боласыз, сондықтан барлық қажетті жолақтарды, жеткізу мөлшерлерін және техникалық мүмкіндіктерді қамтамасыз ету үшін бізбен байланысуға тырысуыңызды қалаймыз.
                                         </p>
                                     </div>
                                 </div>
@@ -65,25 +53,13 @@ function SitePageFaq() {
                                         <h6>Жеткізудің қандай әдістері бар?</h6>
 
                                         <p>
-                                            Lorem ipsum dolor sit amet conse ctetur adipisicing
-                                            elit, sed do eiusmod tempor incididunt ut labore et
-                                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                                            nostrud exercitation ullamco laboris nisi ut aliquip
-                                            ex ea commodo consequat. Duis aute irure dolor in
-                                            reprehenderit in voluptate velit esse cillum dolore
-                                            eu fugiat.
+                                        Жеткізудің әдістері даму, пайдаланушының біліктілігін тексеру, технологияларды қолдану, мәселелерді шешу, мәліметтерді жинау, параметрлерді көзделу, тексеру және бағалау, бастау және бітіру, нәтижелерді анықтау және дәлелдеме жасау сияқты әдістерден тұратын болады.
                                         </p>
 
                                         <h6>Сіз халықаралық тасымалдарды жүзеге асырасыз ба?</h6>
 
                                         <p>
-                                            Lorem ipsum dolor sit amet conse ctetur adipisicing
-                                            elit, sed do eiusmod tempor incididunt ut labore et
-                                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                                            nostrud exercitation ullamco laboris nisi ut aliquip
-                                            ex ea commodo consequat. Duis aute irure dolor in
-                                            reprehenderit in voluptate velit esse cillum dolore
-                                            eu fugiat.
+                                        Біз халықаралық тасымалдарды жүзеге асырамыз. Мыңдаған клиенттерге қызмет көрсету арқылы, әлемдік деңгейде жеткізу қызметтерін орындауға дайынмыз. Біз сіздің тасымалдау жатамында көлемді және мөлшерлі каргоны жеткізу қызметіне көмек көрсетеміз. Сіздің көліктерді, ұшақтарды, жүктерді және басқа каргоның көлемінің қажетті болатын мөлшеріне жауап береміз. Біздің қызметтерге сенімді болып, бізбен байланысуға тырысыңыз.
                                         </p>
                                     </div>
                                 </div>

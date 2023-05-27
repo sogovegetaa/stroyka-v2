@@ -19,7 +19,7 @@ export default function BlockBanner() {
                         style={{ backgroundImage: 'url("images/banners/banner-1-mobile.jpg")' }}
                     />
                     <div className="block-banner__title">
-                        Hundreds
+                        Hundreds{' '}
                         <br className="block-banner__mobile-br" />
                         Қол құралдары
                     </div>

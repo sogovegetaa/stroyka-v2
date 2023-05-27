@@ -35,7 +35,7 @@ export default function BlockCategories(props) {
                             {subcategories}
                         </ul>
                         <div className="category-card__all">
-                            <Link to={category.url}>Show All</Link>
+                            <Link to={category.url}>Барлығын көрсетуl</Link>
                         </div>
                         <div className="category-card__products">
                             {`${category.products} Өнімдер`}

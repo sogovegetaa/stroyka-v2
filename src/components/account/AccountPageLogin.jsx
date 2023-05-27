@@ -35,7 +35,7 @@ export default function AccountPageLogin() {
       }),
       redirect: "follow",
     };
-    fetch("https://asem-backend.vercel.app/api/user/regs", requestOptions)
+    fetch("https://asem-backend.vercel.app/api/user/reg", requestOptions)
       .then((response) => response.text())
       .then((result) => {
         setAccCreated(true)
@@ -149,7 +149,7 @@ export default function AccountPageLogin() {
                       <input
                         id="full_name"
                         type="text"
-                        name="full-name"
+                        name="full_name"
                         className="form-control"
                         placeholder="Толық атын енгізіңіз"
                       />

@@ -6,24 +6,21 @@ export default {
             avatar: 'images/avatars/avatar-1.jpg',
             author: 'Джессика Мур',
             date: 'Қараша 30, 2023',
-            text: 'Aliquam ullamcorper elementum sagittis. Etiam lacus lacus, mollis in mattis in, vehicula eu nulla. '
-                + 'Nulla nec tellus pellentesque.',
+            text: 'Өзім сантехника өнімдеріне қызықпен қараңыз. Солардың басты маңызы - комфортты жасау мен ықшамдылықты түсіндіру. Сантехникалық құралдар әрі қолданушылардың талаптарына сай қамтамасыз етілген болуы маңызды. Бізге жаңалықтарды ұсынуыңыз үшін рақмет, сондықтан көңіл көтереміз!',
             children: [
                 {
                     id: 2,
                     avatar: 'images/avatars/avatar-2.jpg',
                     author: 'Адам Тейлор',
                     date: 'Желтоқсан 4, 2023',
-                    text: 'Ut vitae finibus nisl, suscipit porttitor urna. Integer efficitur efficitur velit non pulvinar. '
-                        + 'Aliquam blandit volutpat arcu vel tristique. Integer commodo ligula id augue tincidunt faucibus.',
+                    text: 'Рахмет! Біздің мақсатымыз сізге қолайлы жаңалықтар және маңызды ақпаратты ұсыну. Сантехникалық өнімдер мен технологияларды бағалау үшін бізді таңдаңыз және сұрауларды қойыңыз, біз сізге көмек көрсету үшін дайын боламыз!',
                 },
                 {
                     id: 3,
                     avatar: 'images/avatars/avatar-3.jpg',
                     author: 'Хелена Гарсия',
                     date: 'Желтоқсан 12, 2023',
-                    text: 'Suspendisse dignissim luctus metus vitae aliquam. Vestibulum sem odio, ullamcorper a imperdiet a, '
-                        + 'tincidunt sed lacus. Sed magna felis, consequat a erat ut, rutrum finibus odio.',
+                    text: 'Өзім де осы бетке келіп, сіздердің ақпараттарыңызды қарауды жақсы көредім. Өнімдерді бағалау үшін сіздерге көмек көрсету үшін рахмет етемін. Сантехникалық құралдар мен өнімдерді сатып алу кезінде көмек көрсету үшін сізге қалайсыздық беру мүмкіндігі мен сапасын таңдау туралы дайындық беру үшін анықтамаларыңызды жіберіңіз!',
                 },
             ],
         },
@@ -32,7 +29,7 @@ export default {
             avatar: 'images/avatars/avatar-4.jpg',
             author: 'Райан Форд',
             date: 'Желтоқсан 5, 2023',
-            text: 'Nullam at varius sapien. Sed sit amet condimentum elit.',
+            text: 'Таңдаулы сантехника - бұл қалайсыздық! Мен жүргізуші кездесемді, мен сіздердің маңызды ақпараттарыңызды қолдауға сенімдемін',
         },
     ],
 };

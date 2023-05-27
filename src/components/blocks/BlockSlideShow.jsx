@@ -28,21 +28,21 @@ export default class BlockSlideShow extends Component {
     slides = [
         {
             title: 'Сантехникалық өнімдердің<br>Үлкен таңдауы',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Etiam pharetra laoreet dui quis molestie.',
+            text: 'Қызметтік сантехникалық өнімдердің бірінші таңдауындағы қалаулар.<br>Арнайы жағдайлар үшін көңілді бақылауды жасау.',
             image_classic: 'images/slides/slide-1.jpg',
             image_full: 'images/slides/slide-1-full.jpg',
             image_mobile: 'images/slides/slide-1-mobile.jpg',
         },
         {
             title: 'Бұрағыштар<br>Кәсіби құралдар',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Etiam pharetra laoreet dui quis molestie.',
+            text: 'Сантехникалық бұрағыштардың кәсіби жасалуы мен қалайлы дайындығы.<br>Ерекше талаптарға сәйкес, қолдану әдістері мен технологиялары.',
             image_classic: 'images/slides/slide-2.jpg',
             image_full: 'images/slides/slide-2-full.jpg',
             image_mobile: 'images/slides/slide-2-mobile.jpg',
         },
         {
-            title: 'One more<br>Unique header',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Etiam pharetra laoreet dui quis molestie.',
+            title: 'Көп қолданылатын сантехникалық өнімдер<br>мен қызметтер',
+            text: 'Барлық қажеттіліктеріңізге жауап беретін бір жердесіз.<br>Мына мүмкіндіктермен сантехникалық өнімдер мен қызметтер бар',
             image_classic: 'images/slides/slide-3.jpg',
             image_full: 'images/slides/slide-3-full.jpg',
             image_mobile: 'images/slides/slide-3-mobile.jpg',

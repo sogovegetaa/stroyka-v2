@@ -11,8 +11,7 @@ export default function FooterContacts() {
             <h5 className="footer-contacts__title">Хабарласу</h5>
 
             <div className="footer-contacts__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in feugiat
-                lorem. Pellentque ac placerat tellus.
+            Сізбен байланысу үшін бізге хабарласу үшін астыдағы контакттарға хабарласыңыз:
             </div>
 
             <ul className="footer-contacts__contacts">

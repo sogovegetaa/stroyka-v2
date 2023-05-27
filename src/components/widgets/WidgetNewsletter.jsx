@@ -7,8 +7,7 @@ function WidgetNewsletter() {
         <div className="widget-newsletter widget">
             <h4 className="widget-newsletter__title">Біздің Бюллетень</h4>
             <div className="widget-newsletter__text">
-                Phasellus eleifend sapien felis, at sollicitudin arcu semper mattis. Mauris quis mi
-                quis ipsum tristique lobortis. Nulla vitae est blandit rutrum.
+            Сізге қоғамдық, бизнес және технологиялардың соңғы жаңалықтары мен тенденциялары туралы білім алуға дайындаймыз. Біздің бюллетеніміз арқылы Сіз деңгейді жаңалықтар, эксперттік көзқарастар және ғылыми дамулар бойынша ақпараттар аласыз.
             </div>
             <form className="widget-newsletter__form" action="">
                 <label htmlFor="widget-newsletter-email" className="sr-only">Электрондық пошта</label>

@@ -1,40 +1,34 @@
 // react
-import React from 'react';
-
+import React from "react";
 
 function ProductTabDescription() {
-    return (
-        <div className="typography">
-            <h3>Өнімнің толық сипаттамасы</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fermentum, diam
-                non iaculis finibus, ipsum arcu sollicitudin dolor, ut cursus sapien sem sed
-                purus. Donec vitae fringilla tortor, sed fermentum nunc. Suspendisse sodales turpis
-                dolor, at rutrum dolor tristique id. Quisque pellentesque ullamcorper felis, eget
-                gravida mi elementum a. Maecenas consectetur volutpat ante, sit amet molestie urna
-                luctus in. Nulla eget dolor semper urna malesuada dictum. Duis eleifend
-                pellentesque dui et finibus. Pellentesque dapibus dignissim augue. Etiam odio est,
-                sodales ac aliquam id, iaculis eget lacus. Aenean porta, ante vitae suscipit
-                pulvinar, purus dui interdum tellus, sed dapibus mi mauris vitae tellus.
-            </p>
-            <h3>Etiam lacus lacus mollis in mattis</h3>
-            <p>
-                Praesent mattis eget augue ac elementum. Maecenas vel ante ut enim mollis accumsan.
-                Vestibulum vel eros at mi suscipit feugiat. Sed tortor purus, vulputate et eros a,
-                rhoncus laoreet orci. Proin sapien neque, commodo at porta in, vehicula eu elit.
-                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                Curae; Curabitur porta vulputate augue, at sollicitudin nisl molestie eget.
-            </p>
-            <p>
-                Nunc sollicitudin, nunc id accumsan semper, libero nunc aliquet nulla, nec pretium
-                ipsum risus ac neque. Morbi eu facilisis purus. Quisque mi tortor, cursus in nulla
-                ut, laoreet commodo quam. Pellentesque et ornare sapien. In ac est tempus urna
-                tincidunt finibus. Integer erat ipsum, tristique ac lobortis sit amet, dapibus sit
-                amet purus. Nam sed lorem nisi. Vestibulum ultrices tincidunt turpis, sit amet
-                fringilla odio scelerisque non.
-            </p>
-        </div>
-    );
+  return (
+    <div className="typography">
+      <h3>Өнімнің толық сипаттамасы</h3>
+      <p>
+        Профессионалды қолдану үшін жасалған күтімді және дәмді қолданбалы
+        плоскорез. 300 Ватттық күшті двигателімен жабдықталатын бұл плоскорезді
+        әділетті және жеткілікті бағалау материалдарымен салыстыруға болады.
+        Негізгі қозғалтыру мүмкіндігінің бірі - қаттылықты өзгерту мүмкіндігі.
+        Бұл пайдаланушының талаптарына сәйкес қаттылықты өзгертуді орнатуға
+        мүмкіндік береді және қажетті нәтижелерге жету мүмкіндігін қамтиды. Бұл
+        арқылы плоскорез деревяның тереңдіктерін өңдеу, шегіністер мен бұғыларды
+        алу, сызуларды тазалау және төмендету туралы рімейлеу сияқты кез келген
+        жұмыстарды орындауға жарамды.
+      </p>
+      <h3>Өнімнің артықшылықтары</h3>
+      <p>
+        Мотордың күшті қылуы және эффективтілігі. Стругалықтың деңгейін белгілеу
+        мүмкіндігі бар. Компактті және ықшамды дизайн - уақытынан болмай,
+        долмауышта жұмыс жасауға мүмкіндік береді. Дұрыс өңдеу және сапасы -
+        түзетілген және тегін деңгейдегі жұмыстарды алуға мүмкіндік береді.
+        Қолайлы және тиімді қолдану мүмкіндігі бар. Деректерді жинау үшін барлық
+        шарттарға сай жақсылықты талап етеді. Прочная конструкция және сенімді
+        материалдарды қолдану - мамандықтардың мерзімділігін арттыруға мүмкіндік
+        береді.
+      </p>
+    </div>
+  );
 }
 
 export default ProductTabDescription;
